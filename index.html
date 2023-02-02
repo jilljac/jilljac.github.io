@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <title>Jill Jacobson</title>
         <meta name="viewport" content=
         "width=device-width, initial-scale=1.0">
         <style>
@@ -16,21 +17,16 @@
             font-family: 'Courier', monospace;
             font-style: italic}
         a   {color:#340B0B;
-            font: weight 300%;
+            font-weight: 300;
         }
         img {
+         display: flex;
          border-radius: 15%;
-        }
-
-        div {
-            margin: 10%;
-            margin: 0;
-
+         padding: 0px;
         }
   
         .card {
             width: 100%;
-            display: flex;
             position: absolute;
             top: 50%;
              -ms-transform: translateY(-50%);
@@ -40,30 +36,28 @@
   
         .row {
             width: 100%;
-            display: flex;
+            display: inline-block;
+            margin: 0;
+            padding: 20px
            ;
         }
   
         .photo-container {
             width: 30%;
+            max-width: 30%;
+            min-width: 200px;
             display: inline-block;
             border-radius: 20px
         }
 
         .text-container {
-            width: 60%;
+            width: 55%;
+            min-width: 200px;
             display: inline-block;
-            margin: 20px
+            margin-left: 10px
         }
   
-        @media screen and (max-width: 500px) {
-  
-            .first,
-            .second,
-            .third {
-                width: 70%;
-            }
-        }
+    
         </style>
         </head>
 <body>
@@ -80,7 +74,7 @@
 
 				<p>From vision to pixels, I ship notebook and data experiences in VS Code, Azure Machine Learning, Microsoft Teams, and more.</p>
 
-				<p style="margin-top: 30px";>
+				<p style="margin-top: 30px;">
 				<a href="mailto:jill.kuyt@gmail.com">Send me an email</a><br>
 		
 			  </p>
