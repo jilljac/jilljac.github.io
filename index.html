@@ -4,24 +4,34 @@
         <style>
         body {background-color: #FCECE9;}
         h1   {color:#340B0B;
-            font-size:larger}
+            font-size:300%;
+            font-family:'Courier', monospace}
         h2    {color:#562020;
-            font-size:Large}
+            font-size:160%;
+            font-family:'Courier', monospace}
         p    {color:#562020;
-            font-size:medium}
+            font-size:100%;
+            font-family: 'Courier', monospace;
+            font-style: italic}
+        a   {color:#340B0B;
+            font: weight 300%;
+        }
         </style>
         </head>
 <body>
     <div class="card">
-		<div class="row">
-			<div class="photo-container">
-				<img class="headshot" src="/Users/jilljacobson/Documents/GitHub/jilljac.github.io/Jill_ProfileCompressed.png" />
+		<div class="row" style="flex">
+			<div class="photo-container" style="border: radius 20px;">
+				<img class="headshot" style="flex" src="Jill_ProfileCompressed.png" />
 			</div>
-			<div class="text-container">
+			<div class="text-container" style=".wrap { 
+                width: 70%;
+              }
+              ">
 			<div>
 				<h1>Jill Jacobson</h1>
 
-				<h2>Design leader for Data Science developer tools at Microsoft.</h2>
+				<h2>Design leader for Data Science tools at Microsoft.</h2>
 
 				<p>From vision to pixels, I ship notebook and data experiences in VS Code, Azure Machine Learning, Microsoft Teams, and more.</p>
 
