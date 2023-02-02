@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta name="viewport" content=
+        "width=device-width, initial-scale=1.0">
         <style>
         body {background-color: #FCECE9;}
         h1   {color:#340B0B;
             font-size:300%;
-            font-family:'Courier', monospace}
+            font-family:'Courier New', monospace}
         h2    {color:#562020;
             font-size:160%;
-            font-family:'Courier', monospace}
+            font-family:'Courier New', monospace}
         p    {color:#562020;
             font-size:100%;
             font-family: 'Courier', monospace;
@@ -16,18 +18,61 @@
         a   {color:#340B0B;
             font: weight 300%;
         }
+        img {
+         border-radius: 15%;
+        }
+
+        div {
+            margin: 10%;
+            margin: 0;
+
+        }
+  
+        .card {
+            width: 100%;
+            display: flex;
+            position: absolute;
+            top: 50%;
+             -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
+          ;
+        }
+  
+        .row {
+            width: 100%;
+            display: flex;
+           ;
+        }
+  
+        .photo-container {
+            width: 30%;
+            display: inline-block;
+            border-radius: 20px
+        }
+
+        .text-container {
+            width: 60%;
+            display: inline-block;
+            margin: 20px
+        }
+  
+        @media screen and (max-width: 500px) {
+  
+            .first,
+            .second,
+            .third {
+                width: 70%;
+            }
+        }
         </style>
         </head>
 <body>
     <div class="card">
-		<div class="row" style="flex">
-			<div class="photo-container" style="border: radius 20px;">
-				<img class="headshot" style="flex" src="Jill_ProfileCompressed.png" />
+		<div class="row">
+			<div class="photo-container">
+				<img class="headshot" src="Jill_ProfileCompressed.png" />
 			</div>
-			<div class="text-container" style=".wrap { 
-                width: 70%;
-              }
-              ">
+			<div class="text-container" >
 			<div>
 				<h1>Jill Jacobson</h1>
 
@@ -35,7 +80,7 @@
 
 				<p>From vision to pixels, I ship notebook and data experiences in VS Code, Azure Machine Learning, Microsoft Teams, and more.</p>
 
-				<p style="margin-top:30px;">
+				<p style="margin-top: 30px";>
 				<a href="mailto:jill.kuyt@gmail.com">Send me an email</a><br>
 		
 			  </p>
